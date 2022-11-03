@@ -3,6 +3,8 @@ import java.util.List;
 import java.util.Set;
 
 public class WordsChecker {
+    private  String text;
+
     Set<String> words;
     public WordsChecker(String text){
         words = new HashSet<>(List.of(text.split("\\P{IsAlphabetic}+")));
@@ -11,4 +13,3 @@ public class WordsChecker {
         return words.contains(word);
     }
 }
-
