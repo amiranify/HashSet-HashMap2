@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Set;
 
 public class WordsChecker {
-    private  String text;
+    protected String text;
 
     Set<String> words;
     public WordsChecker(String text){
